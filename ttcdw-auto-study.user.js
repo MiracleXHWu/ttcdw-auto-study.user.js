@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         学习公社自动刷课
+// @name         学习公社云TTCDW自动刷课
 // @namespace    http://tampermonkey.net/
 // @version      1.4
 // @description  自动刷视频课程：静音播放、自动切换下一集、自动切换下一个未学习课程
@@ -168,7 +168,7 @@
 
         async function processPage() {
             if (!running) return;
-            //切换课程到“专业课选学”，如果不需要切换，注释下面这行，如果需要切换其他课，请修改下面函数参数为需要切换课程的button名。
+            //切换课程到“专业课选学”，如果不需要切换，注释下面这行，如果需要切换其他课，请修改下面函数参数为需要切换课程的按钮名。
             clickProfessionalCourse('专业课选学');
 
             // 重新应用"未学习"筛选（Vue路由翻页后可能丢失）
